@@ -1,0 +1,18 @@
+#nav {
+    height: 50px;
+    background-color: grey;
+}
+
+#header {
+    height: 100px;
+    background-color: darkseagreen;
+}
+
+#footer {
+    height: 100px;
+    background-color: darkseagreen;
+}
+
+#middle {
+    height: 500px;
+}

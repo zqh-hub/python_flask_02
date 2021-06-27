@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}
+    注册
+{% endblock %}
+{% block my_css %}
+    <style>
+        input {
+            margin: 20px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <form action="/user/reg" method="post">
+        <label for="user">Username</label>
+        <input type="text" id="user" name="username"><br>
+        <label for="pwd">Password</label>
+        <input type="text" id="pwd" name="password"><br>
+        <input type="submit" value="注册">
+    </form>
+    {{ msg }}
+{% endblock %}
