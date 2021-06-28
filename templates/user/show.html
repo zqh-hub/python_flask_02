@@ -7,6 +7,7 @@
                 <td>{{ i.username }}</td>
                 <td>{{ i.password }}</td>
                 <td id="del"><a href="javascript:;" onclick="del('{{ i.username }}')">删除</a></td>
+                <td id="del"><a href="javascript:;" onclick="update('{{ i.username }}')">修改</a></td>
             </tr>
         {% endfor %}
     </table>
@@ -15,6 +16,10 @@
     <script>
         function del(name) {
             location.href = "/user/del?username=" + name;
+        }
+
+        function update(name) {
+            location.href = "/user/update?username=" + name;
         }
     </script>
 {% endblock %}

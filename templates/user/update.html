@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+    更新
+{% endblock %}
+
+{% block content %}
+    <form action="{{ url_for('user.update') }}" method="post">
+        <input type="text" id="user" hidden="hidden" name="rel_username" value="{{ user.username }}">
+        <label for="user">Username</label>
+        <input type="text" id="user" name="username" value="{{ user.username }}"><br>
+        <label for="pwd">Password</label>
+        <input type="text" id="pwd" name="password" value="{{ user.password }}"><br>
+        <input type="submit" value="更新">
+    </form>
+{% endblock %}

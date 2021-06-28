@@ -10,7 +10,7 @@
     </style>
 {% endblock %}
 {% block content %}
-    <form action="/user/reg" method="post">
+    <form action="{{ url_for('user.reg') }}" method="post">
         <label for="user">Username</label>
         <input type="text" id="user" name="username"><br>
         <label for="pwd">Password</label>
